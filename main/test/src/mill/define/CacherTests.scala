@@ -7,7 +7,7 @@ import mill.T
 import mill.eval.Result.Success
 import utest._
 import utest.framework.TestPath
-import mill.util.TestEvaluator.implicitDisover
+
 
 object CacherTests extends TestSuite{
   object Base extends Base
