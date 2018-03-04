@@ -75,7 +75,7 @@ trait ScalaModule extends mill.Module with TaskModule { outer =>
     Task.traverse(moduleDeps)(_.compile)
   }
 
-  def upstreamRunClasspath: T[Agg[PathRef]] = T{
+  def upstreamRunClasspath: T[Agg[PathRef]] = T {
     Task.traverse(moduleDeps)(_.runClasspath)().flatten
   }
 
